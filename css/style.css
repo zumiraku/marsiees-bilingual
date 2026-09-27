@@ -2005,3 +2005,20 @@ html[lang="en"] .hero__title {
 .notfound__en {
   font-size: 14px;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+  }
+
+  .btn:hover {
+    transform: none;
+  }
+}
