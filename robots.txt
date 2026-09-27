@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://marsiees.com/sitemap.xml
