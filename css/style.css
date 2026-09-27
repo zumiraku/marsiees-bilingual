@@ -1050,3 +1050,54 @@ html[lang="en"] .hero__title {
     max-width: 300px;
   }
 }
+
+.service-card img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.service-card__body {
+  padding: 18px 22px 24px;
+}
+
+.service-card h3 {
+  margin-bottom: 8px;
+  color: var(--main-dark);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.service-card p {
+  color: var(--text-sub);
+  font-size: 14px;
+}
+
+.industry-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 26px 26px 28px;
+  border: 1px solid var(--pink-line);
+  border-radius: var(--radius);
+  background: var(--soft-pink);
+}
+
+.industry-card h3 {
+  color: var(--main-dark);
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.industry-card p {
+  flex: 1;
+  color: var(--text-sub);
+  font-size: 14px;
+}
+
+.industry-card .btn {
+  min-height: 42px;
+  padding: 6px 20px;
+  font-size: 13px;
+}
