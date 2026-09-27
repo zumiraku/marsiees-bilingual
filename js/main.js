@@ -42,4 +42,56 @@
       slides[current].classList.add('is-active');
     }, 6000);
   }
+
+  var form = document.getElementById('contactForm');
+  if (form) {
+    var inputs = form.querySelectorAll('[required]');
+
+    function check(input) {
+      var field = input.closest('.field');
+      var error = field.querySelector('.field__error');
+      var valid = input.checkValidity();
+      field.classList.toggle('is-error', !valid);
+      input.setAttribute('aria-invalid', String(!valid));
+      if (valid) {
+        if (error) error.remove();
+        return true;
+      }
+      if (!error) {
+        error = document.createElement('p');
+        error.className = 'field__error';
+        error.id = input.name + '-error';
+        input.setAttribute('aria-describedby', error.id);
+        field.appendChild(error);
+      }
+      if (input.type === 'checkbox') error.textContent = 'Please agree to the privacy policy.';
+      else if (input.validity.typeMismatch) error.textContent = 'Please enter a valid email address.';
+      else error.textContent = 'Please fill in this field.';
+      return false;
+    }
+
+    Array.prototype.forEach.call(inputs, function (input) {
+      input.addEventListener(input.type === 'checkbox' ? 'change' : 'input', function () {
+        if (input.closest('.field').classList.contains('is-error')) check(input);
+      });
+    });
+
+    form.addEventListener('submit', function (e) {
+      var firstInvalid = null;
+      Array.prototype.forEach.call(inputs, function (input) {
+        if (!check(input) && !firstInvalid) firstInvalid = input;
+      });
+      if (firstInvalid) {
+        e.preventDefault();
+        firstInvalid.focus();
+        return;
+      }
+      if (!form.getAttribute('action')) {
+        e.preventDefault();
+        var status = document.getElementById('formStatus');
+        status.textContent = 'This is a preview. The form will be connected when the page goes live, so this message was not sent.';
+        status.hidden = false;
+      }
+    });
+  }
 })();
