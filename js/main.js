@@ -31,4 +31,15 @@
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') setMenu(false);
   });
+
+  var slides = document.querySelectorAll('.hero__slide');
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (slides.length > 1 && !reduceMotion) {
+    var current = 0;
+    setInterval(function () {
+      slides[current].classList.remove('is-active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('is-active');
+    }, 6000);
+  }
 })();
