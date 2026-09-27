@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://marsiees.com/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://marsiees.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://marsiees.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://marsiees.com/"/>
+  </url>
+  <url>
+    <loc>https://marsiees.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://marsiees.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://marsiees.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://marsiees.com/"/>
+  </url>
+  <url>
+    <loc>https://marsiees.com/service/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://marsiees.com/service/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://marsiees.com/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://marsiees.com/service/"/>
+  </url>
+  <url>
+    <loc>https://marsiees.com/en/services/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://marsiees.com/service/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://marsiees.com/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://marsiees.com/service/"/>
+  </url>
+  <url>
+    <loc>https://marsiees.com/pricing/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://marsiees.com/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://marsiees.com/en/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://marsiees.com/pricing/"/>
+  </url>
+  <url>
+    <loc>https://marsiees.com/en/pricing/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://marsiees.com/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://marsiees.com/en/pricing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://marsiees.com/pricing/"/>
+  </url>
+  <url>
+    <loc>https://marsiees.com/about/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://marsiees.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://marsiees.com/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://marsiees.com/about/"/>
+  </url>
+  <url>
+    <loc>https://marsiees.com/en/about/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://marsiees.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://marsiees.com/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://marsiees.com/about/"/>
+  </url>
+  <url>
+    <loc>https://marsiees.com/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://marsiees.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://marsiees.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://marsiees.com/contact/"/>
+  </url>
+  <url>
+    <loc>https://marsiees.com/en/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://marsiees.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://marsiees.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://marsiees.com/contact/"/>
+  </url>
+</urlset>
