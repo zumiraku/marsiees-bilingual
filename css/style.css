@@ -1341,3 +1341,71 @@ html[lang="en"] .hero__title {
     flex: 1 1 100%;
   }
 }
+
+.stats-wrap {
+  position: relative;
+  z-index: 2;
+  margin-top: -48px;
+  padding-bottom: 16px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.stats li {
+  padding: 22px 14px;
+  text-align: center;
+}
+
+.stats li + li {
+  border-left: 1px solid var(--line);
+}
+
+.stats strong {
+  display: block;
+  color: var(--main);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.stats small {
+  margin-left: 4px;
+  font-size: 15px;
+}
+
+.stats span {
+  display: block;
+  margin-top: 6px;
+  color: var(--text-sub);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .stats-wrap {
+    margin-top: 24px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stats li:nth-child(3) {
+    border-left: 0;
+  }
+
+  .stats li:nth-child(n + 3) {
+    border-top: 1px solid var(--line);
+  }
+
+  .stats strong {
+    font-size: 30px;
+  }
+}
