@@ -146,6 +146,10 @@ html[lang="en"] .sec-head h2 {
   line-height: 1.3;
 }
 
+.sec-head h2 span {
+  display: inline-block;
+}
+
 .sec-head p {
   margin-top: 14px;
   color: var(--text-sub);
@@ -837,4 +841,127 @@ html[lang="en"] .hero__title {
 .review > p,
 .review__list {
   color: var(--text-sub);
+}
+
+.trouble__wrap {
+  display: grid;
+  grid-template-columns: 1fr 300px 1fr;
+  align-items: center;
+  gap: 24px;
+}
+
+.bubbles {
+  display: grid;
+  gap: 18px;
+}
+
+.bubbles--left {
+  justify-items: end;
+}
+
+.bubbles--right {
+  justify-items: start;
+}
+
+.bubble {
+  position: relative;
+  min-width: 200px;
+  padding: 16px 24px;
+  border: 2px solid var(--heading);
+  border-radius: 40px;
+  background: var(--white);
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.bubble strong {
+  font-size: 17px;
+}
+
+.bubbles--left .bubble:nth-child(2) {
+  margin-right: 40px;
+}
+
+.bubbles--right .bubble:nth-child(odd) {
+  margin-left: 40px;
+}
+
+.trouble__img img {
+  width: 100%;
+}
+
+.trouble__answer {
+  margin-top: 40px;
+  color: var(--main-dark);
+  font-size: clamp(17px, 2vw, 21px);
+  font-weight: 700;
+  text-align: center;
+}
+
+.solution-box__body {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 36px 32px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: linear-gradient(180deg, var(--white), var(--soft-pink));
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.solution-box__body strong {
+  color: var(--main);
+}
+
+.solution-box__body .btn-row {
+  margin-top: 24px;
+}
+
+@media (max-width: 1024px) {
+  .trouble__wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .trouble__img {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  .bubbles--left,
+  .bubbles--right {
+    justify-items: stretch;
+  }
+
+  .bubbles .bubble:nth-child(n) {
+    min-width: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .trouble__wrap {
+    gap: 12px;
+  }
+
+  .bubbles {
+    gap: 12px;
+  }
+
+  .bubble {
+    padding: 12px 10px;
+    border-radius: 24px;
+    font-size: 12px;
+  }
+
+  .bubble strong {
+    font-size: 14px;
+  }
+
+  .solution-box__body {
+    padding: 28px 20px;
+    text-align: left;
+  }
 }
