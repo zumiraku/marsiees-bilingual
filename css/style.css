@@ -1780,3 +1780,189 @@ html[lang="en"] .hero__title {
     grid-template-columns: 90px 1fr;
   }
 }
+
+.contact__inner {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: start;
+  gap: 48px;
+}
+
+.contact__side h2 {
+  margin-bottom: 16px;
+  color: var(--heading);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.contact__steps {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 24px;
+  counter-reset: next;
+}
+
+.contact__steps li {
+  position: relative;
+  padding-left: 40px;
+  color: var(--text-sub);
+  font-size: 15px;
+  counter-increment: next;
+}
+
+.contact__steps li::before {
+  content: counter(next);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--main);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.contact__steps strong {
+  display: block;
+  color: var(--heading);
+}
+
+.contact__tel {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  font-size: 15px;
+}
+
+.contact__tel a {
+  color: var(--main-dark);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contact__tel small {
+  color: #888;
+}
+
+.form {
+  padding: 36px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.field {
+  margin-bottom: 18px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.req {
+  margin-left: 6px;
+  padding: 1px 8px;
+  border-radius: 4px;
+  background: var(--main);
+  color: var(--white);
+  font-size: 11px;
+  vertical-align: 1px;
+}
+
+.field input:not([type="checkbox"]),
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e0d4dc;
+  border-radius: 8px;
+  background: #fcfafb;
+  font-size: 16px;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: var(--main);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(207, 0, 114, .12);
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+.field.is-error input,
+.field.is-error select,
+.field.is-error textarea {
+  border-color: #d93636;
+  background: #fff7f7;
+}
+
+.field__error {
+  margin-top: 4px;
+  color: #d93636;
+  font-size: 13px;
+}
+
+.field--check label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.field--check input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--main);
+}
+
+.field--check a {
+  color: var(--main-dark);
+}
+
+.form__submit {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.form__status {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  background: var(--main-thin);
+  color: var(--main-dark);
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .contact__inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .form {
+    padding: 24px 18px;
+  }
+
+  .form__row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
