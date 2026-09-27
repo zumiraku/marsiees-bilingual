@@ -1635,3 +1635,76 @@ html[lang="en"] .hero__title {
     padding: 22px 20px;
   }
 }
+
+.price-boxes--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.price-boxes--3 .price-box__value strong {
+  font-size: 34px;
+}
+
+.included {
+  margin-top: 56px;
+  padding: 36px 40px;
+  border-radius: 14px;
+  background: var(--soft-pink);
+}
+
+.included__title {
+  margin-bottom: 20px;
+  color: var(--heading);
+  font-size: 22px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.included__list {
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 32px;
+}
+
+.included__note {
+  margin-top: 20px;
+  color: var(--text-sub);
+  font-size: 14px;
+  text-align: center;
+}
+
+.flow--detail li {
+  align-items: flex-start;
+  padding: 18px 20px;
+}
+
+.flow--detail span {
+  margin-top: 2px;
+}
+
+.flow--detail h3 {
+  color: var(--main-dark);
+  font-size: 16px;
+}
+
+.flow--detail p {
+  color: var(--text-sub);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  .price-boxes--3 {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .included {
+    padding: 26px 20px;
+  }
+
+  .included__list {
+    grid-template-columns: 1fr;
+  }
+}
